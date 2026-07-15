@@ -1,0 +1,13 @@
+#include "resource.h"
+
+/**
+ * 资源脚本文件 (.rc)
+ * 作用：建立 ID 与 磁盘上原始文件 之间的映射关系。
+ * 资源编译器 (RC.exe) 会读取此文件，并将对应的 ico 或 txt 打包进生成的 .res 文件，最后链接进 EXE。
+ */
+
+// 将 IDR_HELP_TEXT 关联到项目根目录下的 help.txt 文件 (类型为随机数据 RCDATA)
+IDR_HELP_TEXT RCDATA "..\\help.txt"
+
+// 将 IDI_APP_ICON 关联到项目根目录下的 icon.ico 图标文件
+IDI_APP_ICON  ICON   "..\\icon.ico"
